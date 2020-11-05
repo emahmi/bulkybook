@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BulkyBook.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20201029130327_AddStoredProcForCoverType")]
+    [Migration("20201103143405_AddStoredProcForCoverType")]
     partial class AddStoredProcForCoverType
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

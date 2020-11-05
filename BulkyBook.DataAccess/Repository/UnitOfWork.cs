@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using BulkyBook.DataAccess.Data;
 using BulkyBook.DataAccess.Repository.IRepository;
-using BulkyBook.Models;
-using Microsoft.Extensions.Caching.Memory;
 
 namespace BulkyBook.DataAccess.Repository
 {
@@ -17,13 +13,16 @@ namespace BulkyBook.DataAccess.Repository
             _db = db;
             Category = new CategoryRepository(_db);
             CoverType = new CoverTypeRepository(_db);
+            Product = new ProductRepository(_db);
+            SP_Call = new SP_Call(_db);
         }
 
         public ICategoryRepository Category { get; private set; }
         public ICoverTypeRepository CoverType { get; private set; }
+        public IProductRepository Product { get; private set; }
         public ISP_Call SP_Call { get; private set; }
 
-        public ISP_Call Sp_Call => throw new NotImplementedException();
+    
 
         public void Dispose()
         {
