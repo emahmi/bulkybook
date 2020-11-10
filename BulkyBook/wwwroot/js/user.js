@@ -40,7 +40,7 @@ function loadDataTable() {
                                     <i class="fas fa-lock"></i>  Lock
                                 </a>
                             </div>
-                           `;
+                           `; 
                     }
 
                 }, "width": "25%"
