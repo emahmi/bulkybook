@@ -15,18 +15,18 @@ function loadDataTable() {
             { "data": "city", "width": "10%" },
             { "data": "state", "width": "10%" },
             { "data": "phoneNumber", "width": "15%" },
-            {
-                "data": "IsAuthorizedCompany",
-                "render": function (data) {
-                    if (data) {
-                        return `<input type="checkbox" disabled checked />`
-                    }
-                    else {
-                        return `<input type="checkbox" disabled />`
-                    }
-                },
-                "width": "10%"
-            },
+            //{
+            //    "data": "IsAuthorizedCompany",
+            //    "render": function (data) {
+            //        if (data) {
+            //            return `<input type="checkbox" disabled checked />`
+            //        }
+            //        else {
+            //            return `<input type="checkbox" disabled />`
+            //        }
+            //    },
+            //    "width": "10%"
+            //},
 
             {
                 "data": "id",
@@ -41,7 +41,7 @@ function loadDataTable() {
                                     </a>
                                 </div>
                                 `;
-                }, "width": "40%"
+                }, "width": "25%"
             }
         ]
     });
